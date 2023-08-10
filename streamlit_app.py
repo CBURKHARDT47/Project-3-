@@ -10,7 +10,7 @@ st.divider()
 product_option = st.sidebar.selectbox('Choose Product Type', ('Jeans', 'Shirts'))
 designer_option = st.sidebar.selectbox('Choose Designer', ('Blumarine', 'Diesel', 'MM6'))
 
-jeans_df = pd.read_csv("../jeans.csv")
+jeans_df = pd.read_csv("jeans.csv")
 mean_blumarine_jeans = jeans_df['blumarine'].mean()
 mean_diesel_jeans = jeans_df['diesel'].mean()
 mean_mm6_jeans = jeans_df['MM6'].mean()
@@ -22,7 +22,7 @@ mean_price_jeans = [{'Blumarine':mean_blumarine_jeans},{'Diesel':mean_diesel_jea
 
 # Create bar chart for t-shirts
 
-shirts_df = pd.read_csv("../tshirts.csv")
+shirts_df = pd.read_csv("tshirts.csv")
 mean_blumarine_shirts = shirts_df['blumarine'].mean()
 mean_diesel_shirts = shirts_df['diesel'].mean()
 mean_mm6_shirts = shirts_df['MM6'].mean()
